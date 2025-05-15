@@ -128,6 +128,10 @@ img{
   transition: .3s;
 }
 /*========== NAV ==========*/
+.nav_logo{
+  color: var(--title-color);
+}
+
 .nav{
   height: var(--header-height);
   display: flex;
@@ -284,25 +288,33 @@ img{
 }
 
 /*========== EDUCATION AND EXPERIENCE ==========*/
-.education__content{
+.experience__container{
+  margin-bottom: 1rem;
+}
+
+.education__content,
+.experience__content{
   display: flex;
 }
 
-.education__time{
+.education__time,
+.experience__time{
   padding-right: 1rem;
 }
 
-.education__rounder{
+.education__rounder,
+.experience__rounder{
   position: relative;
   display: block;
   width: 16px;
   height: 16px;
   background-color: var(--text-color-light);
   border-radius: 50%;
-  margin-top: .25;
+  margin-top: .25rem;
 }
 
-.education__line{
+.education__line,
+.experience__line{
   display: block;
   width: 2px;
   height: 110%;
@@ -310,15 +322,18 @@ img{
   transform: translate(7px, 0);
 }
 
-.education__data{
-  gap: .5rem;
+.education__data,
+.experience__data{
+  gap: 1rem;
 }
 
-.education__title{
+.education__title,
+.experience__title{
   font-size: var(--h3-font-size);
 }
 
-.education__studies{
+.education__studies,
+.experience__company{
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
@@ -326,15 +341,56 @@ img{
 .education__year{
   font-size: var(--smaller-font-size);
 }
+
 /*========== SKILLS AND LANGUAGES ==========*/
+.skills__content,
+.languages__content{
+  grid-template-columns: repeat(2, 1fr);
+}
 
+.languages__content{
+  gap: 0;
+}
 
+.skills__name,
+.languages__name{
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-3);
+}
+
+.skills__circle,
+.languages__circle{
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-right: .75rem;
+}
 /*========== CERTIFICATES ==========*/
-
+.certificate__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
 
 /*========== REFERENCES ==========*/
+.references__content{
+  gap: .25rem;
+}
 
+.references__subtitle{
+  color: var(--text-color-light);
+}
 
+.references__subtitle,
+.references__contact{
+  font-size: var(--smaller-font-size);
+}
+
+.references__title{
+  font-size: var(--h3-font-size);
+}
 /*========== INTERESTS ==========*/
 
 
