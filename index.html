@@ -51,13 +51,13 @@
                         </li>
 
                         <li class="nav__item">
-                            <a href="" class="nav__link">
-                                <i class='bx bx-award nav__icon'></i>Certificats
+                            <a href="#certificates" class="nav__link">
+                                <i class='bx bx-award nav__icon'></i>Certificates
                             </a>
                         </li>
 
                         <li class="nav__item">
-                            <a href="" class="nav__link">
+                            <a href="#references" class="nav__link">
                                 <i class='bx bx-link-external nav__icon'></i>References
                             </a>
                         </li>
@@ -84,6 +84,7 @@
                                 <h3 class="home__profession">Support Technitian</h3>
 
                                 <!-- Button to generate and download the pdf. Available for desktop. -->
+                                 <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-buton"></i>
                                  <div>
                                     <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">Download</a>
                                  </div>
@@ -102,7 +103,7 @@
                             </div>
                         </div>
                         <!-- Theme change button -->
-                    
+                        <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
 
                     </section>          
                     
@@ -217,8 +218,8 @@
                                     <h3 class="experience__title">Package Center Supervisor</h3>
                                     <span class="experience__company">April 2020 - June 2024 | UPS</span>
                                     <p class="experience__description">    • In my role as an ASX supervisor I was the main point of contact between load planning and operational execution. I used software tools/databases and operational experience to assist my partners with business goals.
-    • Following flow and operational trends in order to plan ahead with the goal of giving the operation the best possible opportunity to keep up-time high.
-    • Timely and efficient communication to maintain a smooth operation and to escalate any unforeseen problems that were outside my authority. </p>
+    • Following package flow and operational trends in order to plan ahead with the goal of giving the operation the best possible opportunity to keep up-time high.
+    • Timely and efficient communication to maintain a smooth operation. </p>
                                 </div>
                             </div>
                         </div>
@@ -268,6 +269,7 @@
                                 </ul>
                             </div>
                         </div>
+
                         <div class="references__container bd-grid">
                             <div class="references__content bd-grid">
                                 <h3 class="references__title">Carlos Pacheco</h3>
@@ -278,10 +280,11 @@
                                 </ul>
                             </div>
                         </div>
+
                     </section>
 
                     <!--========== LANGUAGES ==========-->
-                    <section class="languages section">
+                   <!-- <section class="languages section">
                         <h2 class="section-title">Languages</h2>
 
                         <div class="languages__container">
@@ -300,18 +303,41 @@
                                 </li>
                             </ul>
                         </div>
-                    </section>
+                    </section> -->
                     
                     <!--========== INTERESTS ==========-->
                     <section class="interests section">
-                        
+                        <h2 class="section-title">interests</h2>
+
+                        <div class="intrests__container bd-grid">
+                            <div class="intrests__content">
+                                <i class="bx bx-headphone intrests__icon"></i>
+                                <span class="interestes__name">Music</span>
+                            </div>
+
+                            <div class="intrests__content">
+                                <i class="bx bx-code intrests__icon"></i>
+                                <span class="interestes__name">Homelab</span>
+                            </div>
+
+                            <div class="intrests__content">
+                                <i class="bx bx-game intrests__icon"></i>
+                                <span class="interestes__name">Games</span>
+                            </div>
+                            <div class="intrests__content">
+                                <i class="bx bx-ball intrests__icon"></i>
+                                <span class="interestes__name">Volleyball</span>
+                            </div>
+                        </div>
                     </section>
                 </div>
-            </div>        
+            </div>       
         </main>
 
         <!--========== SCROLL TOP ==========-->
-        
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class="bx bx-up-arrow-alt scrolltop__icon"></i>
+        </a>
 
         <!--========== HTML2PDF ==========-->
         <script src="assets/js/html2pdf.bundle.min.js"></script>
